@@ -1,0 +1,250 @@
+/* google font import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ===========================
+   VARIABLES
+=========================== */
+:root {
+    /* Brand colors */
+    --color-primary: #BF211E;
+    --color-secondary: #B7B498;
+    --color-bg: #0B0F0D;
+
+    /* Utility colors */
+    --color-muted: #b7b4989c;
+    --color-card: #b7b4981a;
+    --color-primary-light: #bf211e7e;
+    --color-primary-lighter: #bf211e2f;
+}
+
+/* ===========================
+   RESET & BASE STYLES
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    scroll-snap-align: start;
+    padding: 3rem 0;
+}
+
+::selection {
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--color-bg);
+    color: var(--color-secondary);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+a:hover {
+    color: var(--color-secondary);
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.highlight {
+    color: var(--color-primary);
+}
+
+/* ===========================
+   SECTION TITLES
+=========================== */
+.section-title, .section-subtitle {
+    color: var(--color-secondary);
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.9rem;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+.hero {
+    color: var(--color-secondary);
+    padding: 2rem 0;
+    text-align: center;
+    height: 65vh;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+}
+
+.hero p {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    color: var(--color-muted);
+}
+
+.hero nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.hero nav a {
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+.hero nav a:hover {
+    color: var(--color-primary);
+}
+
+/* ===========================
+   ABOUT SECTION
+=========================== */
+.about-content {
+    text-align: center;
+}
+
+.profile-img {
+    width: 222px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+/* ===========================
+   SKILLS
+=========================== */
+.skills {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.skills ul li {
+    border: 1px solid var(--color-primary-light);
+    background: var(--color-card);
+    color: var(--color-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.95rem;
+}
+
+.skills ul li:nth-child(even) {
+    background: var(--color-primary-light);
+    color: var(--color-secondary);
+}
+
+/* ===========================
+   PROJECTS SECTION
+=========================== */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.projects-grid a {
+    background-color: var(--color-card);
+    border-radius: 8px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.projects-grid a:hover {
+    background: linear-gradient(180deg, var(--color-primary-light), var(--color-primary-lighter));
+    transform: translateY(-5px);
+}
+
+.project-card {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.project-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--color-secondary);
+}
+
+.project-card p {
+    color: var(--color-muted);
+    font-size: 0.9rem;
+}
+
+.project-card .highlight {
+    font-weight: bold;
+    color: var(--color-primary);
+    margin-top: 0.5rem;
+}
+
+/* ===========================
+   CONTACT SECTION
+=========================== */
+#contact p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.socials {
+    text-align: center;
+}
+
+.socials a {
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.socials a:hover {
+    text-decoration: underline;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: small;
+    color: var(--color-secondary);
+    background-color: var(--color-card);
+}
+
+/* DONE */
