@@ -5,6 +5,12 @@ This project showcases my **skills, projects, and contact information** in a cle
 
 ---
 
+## 🔗 Live Demo  
+
+Check out the live version here: [View Portfolio](https://datturbomoon.github.io/portfolio)
+
+---
+
 ## ✨ Features
 
 - 🎨 Modern and responsive design  
