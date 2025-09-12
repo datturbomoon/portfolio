@@ -1,5 +1,5 @@
 # 🌐 Personal Portfolio Website
-![snapshot](img/snapshot.png)
+
 A simple and elegant personal portfolio website built with **HTML5** and **CSS3** (using CSS variables for maintainable design).  
 This project showcases my **skills, projects, and contact information** in a clean, responsive layout.
 
