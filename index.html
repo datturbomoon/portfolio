@@ -10,15 +10,15 @@
 
 <body>
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="hero">
         <div class="container">
-            <h1>DIANA <span class="highlight">PADRE</span></h1>
-            <p>Web Developer • Designer • Creator</p>
+            <h1 id="name">DIANA <span class="highlight">PADRE</span></h1>
+            <p id="title">Web Developer • Designer • Creator</p>
             <nav>
-                <ul>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="#contact">contact</a></li>
+                <ul id="nav-links">
+                    <li><a href="#about" class="nav-link">about</a></li>
+                    <li><a href="#projects" class="nav-link">projects</a></li>
+                    <li><a href="#contact" class="nav-link">contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,7 +28,7 @@
     <section id="about">
         <div class="container">
             <div class="about-content">
-                <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
+                <img src="images/profile.jpg" alt="Profile Picture" id="profile-img">
                 <h2 class="section-title">ABOUT ME</h2>
                 <p>
                     Hello! I'm Diana Padre aka <i>datturbomoon</i>, a passionate developer with a love for technology
@@ -43,9 +43,9 @@
             </div>
 
             <!-- Skills Subsection -->
-            <div class="skills">
-                <h2 class="section-subtitle">my skills</h2>
-                <ul>
+            <div id="skills">
+                <h3 class="section-subtitle">my skills:</h3>
+                <ul id="skills-list">
                     <li>HTML5 & CSS3</li>
                     <li>JavaScript (ES6+)</li>
                     <li>Responsive Web Design</li>
@@ -61,22 +61,18 @@
     <section id="projects">
         <div class="container">
             <h2 class="section-title">PROJECTS</h2>
-            <div class="projects-grid">
-                <a href="https://mystic-draw.datturbomoon.space" target="_blank">
-                    <div class="project-card">
-                        <img src="images/project1.png" alt="Mystic Draw Project">
-                        <h3>Mystic Draw</h3>
-                        <p>A tarot card picker built with HTML, CSS, and JavaScript.</p>
-                        <p class="highlight">Live Demo ➦</p>
-                    </div>
+            <div id="projects-grid">
+                <a class="project-wrapper" href="https://mystic-draw.datturbomoon.space" target="_blank">
+                    <img src="images/project1.png" alt="Mystic Draw Project">
+                    <h3 class="project-title">Mystic Draw</h3>
+                    <p class="project-description">A tarot card picker built with HTML, CSS, and JavaScript.</p>
+                    <p class="highlight">Live Demo ➦</p>
                 </a>
-                <a href="https://github.com/datturbomoon/Chess-Game">
-                    <div class="project-card">
-                        <img src="images/project2.png" alt="Chess Game Project">
-                        <h3>Chess Game</h3>
-                        <p>Responsive chess game built with vanilla JS and Tailwind CSS.</p>
-                        <p class="highlight">View on GitHub ➦</p>
-                    </div>
+                <a class="project-wrapper" href="https://github.com/datturbomoon/Chess-Game">
+                    <img src="images/project2.png" alt="Chess Game Project">
+                    <h3 class="project-title">Chess Game</h3>
+                    <p class="project-description">Responsive chess game built with vanilla JS and Tailwind CSS.</p>
+                    <p class="highlight">View on GitHub ➦</p>
                 </a>
             </div>
         </div>
@@ -87,7 +83,7 @@
         <div class="container">
             <h2 class="section-title">CONTACT</h2>
             <p>Interested in working together? Reach me at:</p>
-            <div class="socials">
+            <div id="socials">
                 <a href="mailto:padrediana19@gmail.com">E-mail</a>
                 <span>|</span>
                 <a href="https://github.com/datturbomoon" target="_blank">GitHub</a>

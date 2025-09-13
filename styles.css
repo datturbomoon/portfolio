@@ -17,6 +17,11 @@
     --color-primary-lighter: #bf211e2f;
 }
 
+::selection {
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
+
 /* ===========================
    RESET & BASE STYLES
 =========================== */
@@ -37,16 +42,12 @@ section {
     padding: 3rem 0;
 }
 
-::selection {
-    background: var(--color-primary);
-    color: var(--color-bg);
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
     background: var(--color-bg);
     color: var(--color-secondary);
     line-height: 1.6;
+    text-align: center;
 }
 
 a {
@@ -56,6 +57,7 @@ a {
 
 a:hover {
     color: var(--color-secondary);
+    text-decoration: underline;
 }
 
 .container {
@@ -72,8 +74,6 @@ a:hover {
    SECTION TITLES
 =========================== */
 .section-title, .section-subtitle {
-    color: var(--color-secondary);
-    text-align: center;
     margin: 2rem 0;
     font-size: 1.9rem;
 }
@@ -81,56 +81,58 @@ a:hover {
 /* ===========================
    HERO SECTION
 =========================== */
-.hero {
-    color: var(--color-secondary);
+#hero {
     padding: 2rem 0;
-    text-align: center;
     height: 65vh;
 }
 
-.hero .container {
+#hero .container {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
 }
 
-.hero h1 {
+#name {
     font-size: 5rem;
     line-height: 5rem;
 }
 
-.hero p {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
+#title {
+    margin: 1.2rem 0;
     font-style: italic;
     color: var(--color-muted);
 }
 
-.hero nav ul {
+#nav-links {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 1.5rem;
 }
 
-.hero nav a {
+.nav-link {
     color: var(--color-secondary);
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.hero nav a:hover {
+#nav-links li:nth-child(2) a.nav-link {
+    /* color: var(--color-primary); */
+    border-left: 1px solid var(--color-muted);
+    border-right: 1px solid var(--color-muted);
+    padding: 0 1rem;
+}
+
+.nav-link:hover {
     color: var(--color-primary);
 }
 
 /* ===========================
    ABOUT SECTION
 =========================== */
-.about-content {
-    text-align: center;
-}
-
-.profile-img {
+#profile-img {
     width: 222px;
     border-radius: 50%;
     margin: auto;
@@ -139,12 +141,11 @@ a:hover {
 /* ===========================
    SKILLS
 =========================== */
-.skills {
-    text-align: center;
+#skills {
     margin: 3rem 0;
 }
 
-.skills ul {
+#skills-list {
     list-style: none;
     padding: 0;
     display: flex;
@@ -153,16 +154,15 @@ a:hover {
     gap: 12px;
 }
 
-.skills ul li {
-    border: 1px solid var(--color-primary-light);
+#skills-list li {
     background: var(--color-card);
-    color: var(--color-primary);
+    color: var(--color-muted);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.95rem;
 }
 
-.skills ul li:nth-child(even) {
+#skills-list li:nth-child(even) {
     background: var(--color-primary-light);
     color: var(--color-secondary);
 }
@@ -170,49 +170,50 @@ a:hover {
 /* ===========================
    PROJECTS SECTION
 =========================== */
-.projects-grid {
+#projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
-.projects-grid a {
+.project-wrapper {
+    padding: 1.5rem;
     background-color: var(--color-card);
     border-radius: 8px;
     display: inline-block;
     transition: transform 0.3s ease;
 }
 
-.projects-grid a:hover {
+.project-wrapper:hover {
     background: linear-gradient(180deg, var(--color-primary-light), var(--color-primary-lighter));
     transform: translateY(-5px);
+    text-decoration: none;
 }
 
-.project-card {
-    padding: 1.5rem;
-    text-align: center;
-}
-
-.project-card img {
+.project-wrapper img {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 1rem;
 }
 
-.project-card h3 {
+.project-title {
     margin-bottom: 0.5rem;
     color: var(--color-secondary);
 }
 
-.project-card p {
+.project-description {
     color: var(--color-muted);
     font-size: 0.9rem;
 }
 
-.project-card .highlight {
+.project-wrapper .highlight {
     font-weight: bold;
     color: var(--color-primary);
     margin-top: 0.5rem;
+}
+
+.project-wrapper:hover .project-title {
+    text-decoration: underline;
 }
 
 /* ===========================
@@ -223,27 +224,21 @@ a:hover {
     margin-bottom: 1rem;
 }
 
-.socials {
+#socials {
     text-align: center;
 }
 
-.socials a {
+#socials a {
     margin: 0 5px;
     font-weight: bold;
-}
-
-.socials a:hover {
-    text-decoration: underline;
 }
 
 /* ===========================
    FOOTER
 =========================== */
 footer {
-    text-align: center;
     padding: 1rem;
     font-size: small;
-    color: var(--color-secondary);
     background-color: var(--color-card);
 }
 
