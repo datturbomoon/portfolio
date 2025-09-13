@@ -55,7 +55,7 @@ Simply open `index.html` in your preferred browser.
 
 - **Change content:** Update text inside `index.html`.  
 - **Change colors:** Modify CSS variables inside `styles.css` under the `:root` selector.  
-- **Add projects:** Duplicate a `.project-card` inside the **Projects Section**.  
+- **Add projects:** Duplicate a `.project-wrapper` inside the **Projects Section**.  
 - **Change skills:** Add or remove `<li>` items inside the **Skills Section**.  
 
 ---
