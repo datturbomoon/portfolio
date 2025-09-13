@@ -203,7 +203,7 @@ a:hover {
 
 .project-description {
     color: var(--color-muted);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
 .project-wrapper .highlight {
