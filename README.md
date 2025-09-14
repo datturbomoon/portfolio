@@ -30,11 +30,14 @@ Check out the live version here: [View Portfolio](https://datturbomoon.github.io
 
 ## 📂 Project Structure
 
-portfolio/  
-│── index.html _(Main HTML file)_  
-│── styles.css _(Stylesheet with CSS variables)_  
-│── images/ _(Profile photo and project images)_  
-│── README.md _(Project documentation)_  
+```
+portfolio/
+│
+│── index.html (Main HTML file)
+│── styles.css (Stylesheet with CSS variables)
+│── images/ (Profile photo and project images)
+└── README.md (Project documentation)
+```
 
 ---
 
